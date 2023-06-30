@@ -77,6 +77,12 @@ public:
 			cout << "Tree is emprty" << endl;
 			return;
 		}
+
+		if (ptr != NULL) {
+			postorder(ptr->leftchild);
+			postorder(ptr->rightchild);
+			cout << ptr->info << " ";
+		}
 	}
 };
 
